@@ -2,22 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>person @ ALTER-EGO</title>
+    <title>N0153 @ ALTER-EGO</title>
 </head>
 <body>
-<b>FACE</b>
-<br />Full Name:
-<br />Current position:
-<br />Experience:
-<br />Education:
-<br />Bio:
-<br />
-<textarea placeholder="Mini-Blog"></textarea>
+<b>PERSON</b>
+<br />Full Name: {{ person.first_name }} {{ person.last_name }}
+<br />Hobby: {{ person.hobby }}
+<br />Employment status: {{ person.employment_status }}
+<br />Bio: {{ person.bio }}
+<br /><br />
+<div>
+    {% if posts %}
+    {% for post in posts %}
+        <b><h3>{{ post.post_title }}</h3></b>
+        <br />{{ post.post_text }}<br />
+    {% endfor %}
+    {% endif %}
+</div>
 
 <br />
 <br /><a href="{% url 'Main:index' %}">Index</a>
-<br /><a href="{% url 'Main:person' %}">Person view</a>
+<br /><a href="{% url 'Main:person' 1 %}">Person view</a>
 <br /><a href="{% url 'Main:about' %}">About</a>
+<br /><a href="{% url 'Main:author' %}">author</a>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-FIRST_NAME = ''
+FIRST_NAME = 'Pepe'
 LAST_NAME = ''
 CURRENT_POSITION = ''
 OPEN_FOR_ROLES = []
@@ -7,3 +7,5 @@ EXPERIENCE = []
 EDUCATION = ''
 BIO = ''
 PROJECTS = ''
+LINKS = ''
+HOBBY = ''

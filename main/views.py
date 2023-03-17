@@ -1,11 +1,6 @@
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.template import loader
-from django.urls import reverse, reverse_lazy
-from django.views import generic
-from django.contrib.auth.decorators import login_required
-from django.utils.decorators import method_decorator
-from django.views.generic.edit import DeleteView
-from django.shortcuts import render
+from .models import *
 import constants
 
 
@@ -16,10 +11,24 @@ def main(request):
     return HttpResponse(template.render(context, request))
 
 
-def person(request):
+def person(request, pk):
+    person_data = Person.objects.get(id=pk)
     template = loader.get_template('main/person.html')
     context = {
+        'person': person_data,
         'data': constants,
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def author(request):
+    person_data = Person.objects.get(id=1)
+    posts = Post.objects.filter(post_author__id=1)
+    template = loader.get_template('main/person.html')
+    context = {
+        'person': person_data,
+        'data': constants,
+        'posts': posts,
     }
     return HttpResponse(template.render(context, request))
 

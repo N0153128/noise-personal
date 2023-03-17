@@ -35,3 +35,6 @@ class Personality(models.Model):
     person = models.ForeignKey(Person, on_delete=models.CASCADE, null=False, blank=False)
     alter = models.ForeignKey(Alter, on_delete=models.CASCADE, null=False, blank=False)
 
+    def __str__(self):
+        return f'{self.person} aka {self.alter}'
+

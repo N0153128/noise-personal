@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ABOUT ALTER-EGO</title>
-</head>
+{% extends 'main.html' %}
+{% block content %}
+<title>ABOUT ALTER-EGO</title>
 <body>
 <b>ALTER-EGO <span style="font-size: 12px">By N0153</span></b>
 <br />
@@ -12,11 +9,8 @@ Imagine if you could hand your potential employer or an in-game teammate your bu
 accomplishments, achievements, expertise and even more! <br />
 Well, now you can do that with ALTER-EGO!
 <br />
-<br /><a href="{% url 'Main:index' %}">Index</a>
-<br /><a href="{% url 'Main:person' 1%}">Person view</a>
-<br /><a href="{% url 'Main:about' %}">About</a>
-<br /><a href="{% url 'Main:author' %}">author</a>
+
 
 
 </body>
-</html>
+{% endblock %}

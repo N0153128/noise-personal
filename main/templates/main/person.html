@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{% extends 'main.html' %}
+{% block content %}
     <title>N0153 @ ALTER-EGO</title>
-</head>
-<body>
 <b>PERSON</b>
 <br />Full Name: {{ person.first_name }} {{ person.last_name }}
 <br />Hobby: {{ person.hobby }}
@@ -21,10 +17,5 @@
 </div>
 
 <br />
-<br /><a href="{% url 'Main:index' %}">Index</a>
-<br /><a href="{% url 'Main:person' 1 %}">Person view</a>
-<br /><a href="{% url 'Main:about' %}">About</a>
-<br /><a href="{% url 'Main:author' %}">author</a>
 
-</body>
-</html>
+{% endblock %}

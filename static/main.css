@@ -1,0 +1,4 @@
+.grad{
+  background-image: linear-gradient(white 50%, black 50%);
+  height: 100%;
+}

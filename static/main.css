@@ -1,4 +1,49 @@
-.grad{
-  background-image: linear-gradient(white 50%, black 50%);
+.bg-area{
   height: 100%;
+  width: 100%
+  margin-bottom: 100px;
+  padding: 100px;
+}
+
+.card-header{
+    border: none;
+    background-color: unset;
+}
+
+.alter-side{
+    background-image: linear-gradient(to bottom, blue 10%, grey 90%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.alter-side-wrap{
+  background-color: #000;
+  height: 100%;
+  width: 100%
+}
+
+{
+    height: 100%;
+    background-image: linear-gradient(to bottom, white, black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card{
+    border: none;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+.light {
+    background-image: linear-gradient(white);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: grey;
 }

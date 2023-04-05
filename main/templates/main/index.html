@@ -1,6 +1,52 @@
 {% extends 'main.html' %}
 {% block content %}
-<div class="card">
+<div class="bg-area ">
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+
+
+       <div class="card light">
+    <br />
+  <div class="card-header">
+    Professional
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>Hello world</p>
+      <footer class="blockquote-footer">This is your professional side</cite></footer>
+    </blockquote>
+    <a href="">LinkedIn</a> <a href="">Github</a> <a href="">Personal Website</a> <a href="">Facebook</a>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+
+
+
+       <div class="card light">
+    <br />
+  <div class="card-header">
+    Professional
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>Hello world</p>
+      <footer class="blockquote-footer">This is your professional side</cite></footer>
+    </blockquote>
+    <a href="">LinkedIn</a> <a href="">Github</a> <a href="">Personal Website</a> <a href="">Facebook</a>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+  <div class="card light">
     <br />
   <div class="card-header">
     Professional
@@ -14,8 +60,34 @@
   </div>
 </div>
 
-<br />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
+<!--<div class="card">-->
+<!--    <br />-->
+<!--  <div class="card-header">-->
+<!--    Professional-->
+<!--  </div>-->
+<!--  <div class="card-body">-->
+<!--    <blockquote class="blockquote mb-0">-->
+<!--      <p>Hello world</p>-->
+<!--      <footer class="blockquote-footer">This is your professional side</cite></footer>-->
+<!--    </blockquote>-->
+<!--    <a href="">LinkedIn</a> <a href="">Github</a> <a href="">Personal Website</a> <a href="">Facebook</a>-->
+<!--  </div>-->
+<!--</div>-->
+
+<br />
+    <div class="alter-side-wrap">
 <div class="card text-bg-dark mb-3">
     <br />
   <div class="card-header">
@@ -24,10 +96,14 @@
   <div class="card-body">
     <blockquote class="blockquote mb-0">
       <p>Hello world</p>
-      <footer class="blockquote-footer">This is your Alter-ego side</cite></footer>
+      <footer class="blockquote-footer">This is your Alter-ego side</footer>
     </blockquote>
       <a href="">Steam</a> <a href="">Twitch</a> <a href="">Spotify</a> <a href="">Telegram</a>
   </div>
 </div>
+  </div>
 
+
+
+</div>
 {% endblock %}

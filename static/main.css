@@ -1,8 +1,11 @@
+
+
 .bg-area{
   height: 100%;
   width: 100%
   margin-bottom: 100px;
   padding: 100px;
+
 }
 
 .card-header{
@@ -44,6 +47,10 @@
     background-image: linear-gradient(white);
 }
 
- {
-    background-color: grey;
+.yellow {
+    background: #ffcc00;
+}
+
+.purple {
+    background: #6600cc;
 }

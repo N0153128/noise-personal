@@ -22,7 +22,7 @@ def person(request, pk):
 
 
 def author(request):
-    person_data = Person.objects.get(id=1)
+    person_data = Person.objects.get(id=2)
     posts = Post.objects.filter(post_author__id=1)
     template = loader.get_template('main/person.html')
     context = {
